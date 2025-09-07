@@ -38,28 +38,27 @@ From the tcpdump logs, I found the following protocols:
      your.machine > dns.google.domain: A? yummyrecipesforme.com  
      dns.google.domain > your.machine: A 203.0.113.22
      ```  
-   📸 *[Insert screenshot of C here]*
-   ![DNS request](docs/screenshots/dns_request_response.png)
+   ![DNS Request](docs/screenshots/dns_request_response.png)
 
-3. **HTTP (Hypertext Transfer Protocol)**  
+2. **HTTP (Hypertext Transfer Protocol)**  
    - Used by the browser to request pages from both websites.  
    - Example:  
      ```
      HTTP: GET / HTTP/1.1
-     ```  
-   📸 *[Insert screenshot of HTTP GET request here]*  
+     ```    
+![HTTP GET](docs/screenshots/http_GET_request.png)
 
-4. **TCP (Transmission Control Protocol)**  
+3. **TCP (Transmission Control Protocol)**  
    - Manages reliable connections (SYN, SYN-ACK, ACK).  
    - Example:  
      ```
      Flags [S], seq..., win..., options...
      ```  
-   📸 *[Insert screenshot of TCP handshake here]*  
+  ![TCP Handshake](tcp_handshake.png) 
 
 ---
 
-## 📑 Step 2: Incident Documentation  
+## Step 2: Incident Documentation  
 
 - **Where it happened:** On the website server `yummyrecipesforme.com`.  
 - **How it happened:**  
@@ -72,29 +71,28 @@ From the tcpdump logs, I found the following protocols:
   - Trust in the company was reduced.  
   - Admin access was locked after the attacker changed the password.  
 
-📸 *[Insert screenshot of malicious JavaScript code in source]*  
-📸 *[Insert screenshot of redirected URL here]*  
+![Injected JavaScript](docs/screenshots/js_injection.png)
+![Redirect to Fake Site](docs/screenshots/redirect.png) 
 
 ---
 
-## 🔐 Step 3: Recommended Security Action  
+## Step 3: Recommended Security Action  
 
 **Recommendation:** Implement **Two-Factor Authentication (2FA)** for all admin accounts.  
 
 - Even if attackers guess the password, they cannot access the system without a second factor (e.g., authenticator app or token).  
 - This significantly lowers the risk of successful brute force attacks.  
 
-📸 *[Insert screenshot or diagram explaining 2FA here]*  
+![2FA Diagram](docs/screenshots/2FA_diagram.png)
 
 ---
 
-## ✅ Key Takeaways  
+## Key Takeaways  
 
 - Default/weak passwords leave systems wide open.  
-- Log analysis (DNS → HTTP → Redirect) helps track attack flow.  
+- Log analysis (DNS - HTTP - Redirect) helps track attack flow.  
 - **2FA** is a strong defense against brute force login attempts.  
 
 ---
 
-## 📂 Repo Structure  
 
