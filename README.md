@@ -54,7 +54,7 @@ From the tcpdump logs, I found the following protocols:
      ```
      Flags [S], seq..., win..., options...
      ```  
-  ![TCP Handshake](tcp_handshake.png) 
+  ![TCP Handshake](docs/screenshots/tcp_handshake.png) 
 
 ---
 
