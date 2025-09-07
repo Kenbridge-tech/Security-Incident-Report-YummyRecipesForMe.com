@@ -91,7 +91,7 @@ From the tcpdump logs, I found the following protocols:
 
 For a detailed write-up of this incident, read the full report here:  
 
-![Download PDF Report](report/incident_report.pdf) 
+![Download PDF Report](report/Incident_report.pdf) 
 
 ---
 
