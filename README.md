@@ -23,7 +23,7 @@ When visitors loaded the website:
 - Running the file redirected them to a **malicious clone site**: `greatrecipesforme.com`.  
 - Customers later reported **slow systems** and suspicious downloads.  
 
-I used a **tcpdump log** to analyze the attack sequence and document what happened.  
+I used a provided **tcpdump log** to analyze the attack sequence and document what happened.  
 
 ---
 
@@ -38,9 +38,10 @@ From the tcpdump logs, I found the following protocols:
      your.machine > dns.google.domain: A? yummyrecipesforme.com  
      dns.google.domain > your.machine: A 203.0.113.22
      ```  
-   📸 *[Insert screenshot of DNS request/response here]*  
+   📸 *[Insert screenshot of C here]*
+   ![DNS request](docs/screenshots/dns_request_response.png)
 
-2. **HTTP (Hypertext Transfer Protocol)**  
+3. **HTTP (Hypertext Transfer Protocol)**  
    - Used by the browser to request pages from both websites.  
    - Example:  
      ```
@@ -48,7 +49,7 @@ From the tcpdump logs, I found the following protocols:
      ```  
    📸 *[Insert screenshot of HTTP GET request here]*  
 
-3. **TCP (Transmission Control Protocol)**  
+4. **TCP (Transmission Control Protocol)**  
    - Manages reliable connections (SYN, SYN-ACK, ACK).  
    - Example:  
      ```
