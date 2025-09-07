@@ -87,9 +87,17 @@ From the tcpdump logs, I found the following protocols:
 
 ---
 
-## Key Takeaways  
+## Full Incident Report  
 
-- Default/weak passwords leave systems wide open.  
+For a detailed write-up of this incident, read the full report here:  
+
+![Download PDF Report](report/incident_report.pdf) 
+
+---
+
+## Key Takeaways:
+
+- Default/weak passwords leave systems wide open and vulnerable.  
 - Log analysis (DNS - HTTP - Redirect) helps track attack flow.  
 - **2FA** is a strong defense against brute force login attempts.  
 
